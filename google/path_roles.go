@@ -242,7 +242,7 @@ func (role *role) updateRole(sys logical.SystemView, op logical.Operation, data 
 		role.BoundGroups = boundGroupsRaw.([]string)
 	}
 
-	// Update bound groups.
+	// Update bound emails.
 	boundEmailsRaw, ok := data.GetOk("bound_emails")
 	if ok {
 		role.BoundEmails = boundEmailsRaw.([]string)
